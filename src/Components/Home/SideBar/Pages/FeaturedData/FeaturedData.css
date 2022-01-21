@@ -1,0 +1,36 @@
+.Data {
+    margin: 50px;
+    justify-content: space-evenly;
+}
+.Data-Item {
+    padding: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    text-align: left;
+    border-radius: 10px;
+    border: 2px solid steelblue;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+.UpArrow {
+    padding: 2px;
+    text-align: center;
+    font-size: 20px;
+    color: green;
+
+}
+
+.DownArrow {
+    padding: 2px;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+
+}
+
+.description{
+    color: grey;
+    font-size: 14px;
+    /* margin-top:2px; */
+    /* padding: 2px; */
+}

@@ -1,0 +1,36 @@
+.message {
+    width:458px;
+    margin: auto;
+    margin-top: 5rem;
+}
+.contact-us-div{
+    width:458px;
+    margin:auto;
+    padding:30px;
+    border: 5px solid steelblue;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 2px 2px 4px #888888;
+}
+
+.contact-us-div h1{
+    /* color:#27cdf2; */
+    color: steelblue;
+    text-shadow: 2px 2px 4px#888888;
+    text-align: center;
+    margin: 35px;
+}
+
+.form-group label{
+    margin:10px;
+    text-align: left;
+}
+
+.form-group input{
+    margin:10px;
+    display: flex;
+}
