@@ -10,6 +10,7 @@
 /src/logo.svg
 /src/App.test.js
 /public
+!/public/index.js
 
 # testing
 /coverage
