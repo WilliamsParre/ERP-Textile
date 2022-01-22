@@ -9,7 +9,10 @@
 /src/setupTests.js
 /src/logo.svg
 /src/App.test.js
-/public
+/public/*.ico
+/public/*.json 
+/public/*.txt
+
 
 # testing
 /coverage
