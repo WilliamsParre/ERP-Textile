@@ -28,16 +28,7 @@ function SignUp() {
 
     const register = () => {
         const { name, email, password, reEnterPassword } = user;
-        let reg = /^[A-Z]*$/;
-        let isPassed = reg.test(password);
-        if (!isPassed) {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Oops...',
-                text: 'Password must contain atleast 1 special charatcer and 1 uppercase letter.',
-            });
-        }
-        else if (name && email && password && (password === reEnterPassword) && password.length >= 8 && isPassed) {
+        if (name && email && password && (password === reEnterPassword)) {
             axios.post("http://localhost:8000/register", user)
                 .then(res => {
                     // alert(res.data.message);
@@ -54,6 +45,12 @@ function SignUp() {
                             'You have successfully Registered!',
                             'success'
                         );
+                        setUser({
+                            name: "",
+                            email: "",
+                            password: "",
+                            reEnterPassword: ""
+                        });                
                     }
                 });
         } else {
@@ -63,14 +60,6 @@ function SignUp() {
                 text: 'Some fields are missing!',
             });
         }
-
-        setUser({
-            name: "",
-            email: "",
-            password: "",
-            reEnterPassword: ""
-        });
-
     }
 
     return (
